@@ -1,0 +1,10 @@
+reviews:
+  base_branches: ['*'] # 🔥 Enables auto-review on all branches
+  review_status: true # ✅ Shows review status on PR
+  review_on_draft: false # ❌ Skip reviews on draft PRs
+  review_on_push: true # ✅ Re-review if new commits pushed
+
+comments:
+  summarize: true # ✅ Adds summary comment on PR
+  inline: true # ✅ Adds inline comments
+  tone: professional # Options: friendly | professional | strict
