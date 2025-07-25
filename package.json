@@ -34,9 +34,10 @@
     "type-check": "tsc  --noemit",
     "lint:translations": "eslint ./src/translations/ --fix --ext .json  ",
     "test": "jest",
-    "check-all": "pnpm run lint && pnpm run type-check && pnpm run lint:translations && pnpm run test",
+    "check-all": "pnpm run lint "check-all": "pnpm run lint && pnpm run type-check && pnpm run lint:translations && pnpm run test""check-all": "pnpm run lint && pnpm run type-check && pnpm run lint:translations && pnpm run test" pnpm run type-check "check-all": "pnpm run lint && pnpm run type-check && pnpm run lint:translations && pnpm run test""check-all": "pnpm run lint && pnpm run type-check && pnpm run lint:translations && pnpm run test" pnpm run lint:translations "check-all": "pnpm run lint && pnpm run type-check && pnpm run lint:translations && pnpm run test""check-all": "pnpm run lint && pnpm run type-check && pnpm run lint:translations && pnpm run test" pnpm run validate-markdown "check-all": "pnpm run lint && pnpm run type-check && pnpm run lint:translations && pnpm run test""check-all": "pnpm run lint && pnpm run type-check && pnpm run lint:translations && pnpm run test" pnpm run test",
     "test:ci": "pnpm run test --coverage",
     "test:watch": "pnpm run test --watch",
+    "validate-markdown": "node scripts/validate-markdown.js",
     "install-maestro": "curl -Ls 'https://get.maestro.mobile.dev' | bash",
     "e2e-test": "maestro test .maestro/ -e APP_ID=com.obytes.development"
   },
